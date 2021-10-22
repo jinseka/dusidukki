@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FF9E80"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="313dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/dusi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#82B1FF"
+            android:text="이메일"
+            android:textColor="#FAF6F6"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#82B1FF"
+            android:hint="    E-mail을 입력하세요"
+            android:textColorHint="@color/white"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#82B1FF"
+            android:text="비밀번호"
+            android:textColor="#F6F5F5"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/pwdEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#82B1FF"
+            android:hint="    비밀번호를 입력하세요"
+            android:textColorHint="@color/white"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:text="로그인"
+
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#FF9E80" />
+        <Button
+            android:id="@+id/joinBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#FF9E80" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TabActivity">
+    <!--context : 안드로이드에서는 activity하나를 의미 ! 액티비티 하나다 !
+
+                  스프링 프로젝트에서는 project 하나를 의미 !
+     -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMAP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Map"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#2196F3" />
+
+        <Button
+            android:id="@+id/btnPOST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Post"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#2196F3" />
+
+        <Button
+            android:id="@+id/btnMY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#2196F3" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TabHost
+            android:id="@+id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/tabList"
+                        android:layout_width="match_parent"
+                        android:layout_height="502dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <!--                    <ImageView-->
+                        <!--                        android:id="@+id/imageView"-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:src="@drawable/err" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        android:id="@+id/text1"-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:text="song"-->
+                        <!--                        >-->
+                        <!--                    </TextView>-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabWrite"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <!--                    <ImageView-->
+                        <!--                        android:id="@+id/imageView2"-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:src="@drawable/er" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        android:id="@+id/text2"-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:text="Artist"-->
+                        <!--                        >-->
+                        <!--                    </TextView>-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabAlbum"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:background="@color/material_on_surface_emphasis_medium"
+                        android:orientation="vertical">
+
+                        <!--                    <ImageView-->
+                        <!--                        android:id="@+id/imageView3"-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:src="@drawable/errr" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        android:id="@+id/text3"-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:text="Album">-->
+                        <!--                    </TextView>-->
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:background="#FF8A80"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"></TabWidget>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+
+</LinearLayout>
