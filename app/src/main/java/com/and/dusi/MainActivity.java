@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     int i = 1; //userId값 count하기 위한 변수
     ListView listView;
     TextView text1, text2;
-
+//
     ArrayList<Bbs> arrayList;
     Button btnPOST;
     //수정된거 올려보자 ! 올라갔나 다시해보자
